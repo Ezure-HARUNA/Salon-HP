@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/204a7bd8f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>模写課題</title>
+</head>
+    <body>
+    <header>
+        <h1 class="header-logo"><a href="first-v">SALON DEPPU</a></h1>
+        <div class="ham" id="js-ham">
+            <span></span>
+            <span></span>
+            <span class="span-short"></span>
+        </div>
+        <!--ハンバーガーメニューの出現-->
+        <nav class="grobal-nav">
+            <ul class="material-box sample1 menu grobal-nav-list">
+                <li><a href="#first-v" class="scroll grobal-list">MENU</a></li>  
+                <li><a href="#concept" class="scroll grobal-list">CONCEPT</a></li>
+                <li><a href="#access" class="scroll grobal-list">ACCESS</a></li>
+                <li><a href="#reserve" class="scroll grobal-list">RESERVE</a></li>  
+            </ul>
+        </nav>
+        <div class="black-bg" id="js-black-bg"></div>
+
+        <nav class="pc-navmenu"> <!--sp版のメニュータグも付けるから"pc"-navmenuとしておく-->
+           <ul>
+               <li><a href="#first-v">MENU</a></li>  
+               <li><a href="#concept">CONCEPT</a></li>
+               <li><a href="#access">ACCESS</a></li>
+               <li><a href="#reserve">RESERVE</a></li>        
+           </ul> 
+        </nav>
+    </header>
+
+    <main>
+        <section id="first-v">
+            <div class="first-v-wrap">
+                <div class="first-v-message-wrap">
+                    <div class="message-child-wrap">
+                        <h2 class="kami">髪は、大事です。</h2>
+                        <h2 class="hair">We need Hair.</h2>
+                    </div>
+                    
+                </div>
+                <div class="first-v-picture-wrap">
+
+                </div>
+            </div>       　
+        </section>
+
+        <section id="concept">
+            <div class="concept-wrap">
+                <div class="concept-top-bottom-wrap">
+                    <div class="concept-top-wrap">
+                        <h2 class="title"><span class="title-span">CONCEPT</span></h2>
+                    </div>
+                    <div class="concept-bottom-wrap">
+                        <h3>髪は、大事です。</h3>
+                        <p>
+                            テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
+                    <div class="picture-wrap">
+                        <div class="picture-left"></div>
+                        <div class="picture-right"></div>
+                    </div>
+                </div>
+
+               
+                    
+            </div>
+        </section>
+
+        <section id="menu">   
+            <h2 class="title"><span class="title-span">MENU</span></h2>
+            <div class="menu-wrap">
+                <section class="menu-item">
+                    <div class="menu_img">
+                        <img src="./img/icon-1.png" alt="">
+                    </div>
+                    <div class="menu-item_content">  <!--余白の管理-->
+                        <h3 class="menu-item_title">Design Cut</h3>
+                        <div class="menu-item_text-wrap">
+                            <p class="menu-item_text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
+                        </div>
+                        <p class="menu-item_price">¥9,800(税抜)</p>
+                    </div>
+                </section>
+                <section class="menu-item">
+                    <div class="menu_img">
+                        <img src="./img/icon-2.png" alt="">
+                    </div>
+                    <div class="menu-item_content">  <!--余白の管理-->
+                        <h3 class="menu-item_title">Design Perm</h3>
+                        <div class="menu-item_text-wrap">
+                            <p class="menu-item_text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
+                        </div>
+                        <p class="menu-item_price">¥19,800~(税抜)</p>
+                    </div>
+                </section>
+                <section class="menu-item">
+                    <div class="menu_img">
+                        <img src="./img/icon-3.png" alt="">
+                    </div>
+                    <div class="menu-item_content">  <!--余白の管理-->
+                        <h3 class="menu-item_title">Make Up</h3>
+                        <div class="menu-item_text-wrap">
+                            <p class="menu-item_text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
+                        </div>
+                        <p class="menu-item_price">¥8,800(税抜)</p>
+                    </div>
+                </section>
+                        
+            </div>
+        </section>
+        
+        <!--menu.scss参考！-->
+        <section id="access">
+            <h2 class="title"><span class="title-span">ACCESS</span></h2>
+            <div class="access-wrap">
+                <div class="access-info">
+                    <h3 class="info-title">池袋東口店</h3>
+                    <ul class="access-info_ul">
+                        <li>テキストテキストテキスト</li>
+                        <li>000-0000-0000</li>
+                        <li>営業時間 10:00~18:00</li>
+                        <li>定休日 第一・第三月曜日</li>
+                    </ul>
+                </div>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51822.08464734575!2d139.68004796229354!3d35.729162504051054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d68974de2e9%3A0x4049becbb713f81d!2z5p2x5Lqs6YO96LGK5bO25Yy6!5e0!3m2!1sja!2sjp!4v1575445756063!5m2!1sja!2sjp"  allowfullscreen=""></iframe>
+                
+            </div>
+               
+        </section>
+
+        <section id="reserve">
+            <span class="line"></span>
+            <div class="reserve-wrap">
+                <h3 class="reserve-wrap_logo">SALON<span>BEPPU</span></h3>
+                <div class="reserve-wrap_icon">
+                    <i class="fab fa-twitter" class="twitter"></i>
+                    <i class="fab fa-facebook-square" class="facebook"></i>
+                </div>
+                <button class="reserve-btn js-toggleMenu">
+                    <p>RESERVE</p>
+                </button>
+                
+               
+            </div>
+        </section>
+
+
+            
+        
+    </main>
+    
+    
+    <script src="./main.js"></script>
+</body>
+</html>
