@@ -1,0 +1,94 @@
+@charset "UTF-8";
+#access {
+    width: 100%;
+    height: 757px;
+    background-color: #A193861F;
+    position: relative;
+    @include sp {
+        width: 100%;
+        height: 710px;
+    }
+    .title {
+        position: absolute;
+        top: 261px;
+        left: 8.3%;
+        @include sp {
+            position: absolute;
+            top: 8.5%;//60/710
+            left: 5.3&;//20/375
+        }
+    }
+    .access-wrap {
+        position: absolute;
+        top: 291px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 396px;
+        @include sp {
+            position: absolute;
+            top: 18.9%;//134/710
+            left:0;
+            //flex-direction: column;
+            position: relative;
+            height: 72.3%;//513.33/710
+        }
+        .access-info {
+            height: 100%;
+            width: 39.5%;
+            background-color: #D0C5BA;
+            font-family: "Roboto Mono for Powerline";
+            position: relative;
+            @include sp {
+                height: 55%;//282.33/513
+                width: 100%;
+                position: absolute;
+                top: 45%;//231/513.33
+                left: 0;
+            }
+            .info-title {
+                position: absolute;
+                top: 101px;
+                left: 20.5%;
+                font-size: 2.4rem;
+                letter-spacing: 0.24rem;
+                color: #00000038;
+                @include sp {
+                    position: absolute;
+                    top: 30px;
+                    left: 5.3%;//20/375
+                }
+            }
+            &_ul {
+                position: absolute;
+                top: 155px;
+                left: 21.1%;
+                font-size: 1.6rem;
+                color: #ffffff;
+                letter-spacing: 0.16rem;
+                @include sp {
+                    position: absolute;
+                    top: 84px;
+                    left: 5.3%;//20/375
+                }
+                li {
+                    margin-top: 23px;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        .map {
+            height: 100%;
+            width: 60.5%;
+            @include sp {
+                width: 100%;
+                height: 45%;//231/513.33
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}

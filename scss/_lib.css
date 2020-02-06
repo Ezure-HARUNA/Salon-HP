@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 12px;
+  line-height: 1.67;
+}
+
+.title {
+  color: #707070;
+  align-items: center;
+  font-size: 1.8rem;
+  letter-spacing: 0.54rem;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    align-items: center;
+  }
+}
+
+.title:after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid;
+  width: 11.75rem;
+  margin-left: 2.25rem;
+}

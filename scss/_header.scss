@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 68px 0 0 77px;
+    position: absolute;
+    z-index: 10;
+    
+    @include sp {
+        position: relative;
+        height: 70px;
+        line-height: 70px;
+        background-color: #fff;
+        padding: 24px 5.3%;//24px,20px
+    }
+}
+
+.menu {
+    display: none;
+}
+
+.header-logo {
+    font-size: 3.8rem;
+    font-family: "Roboto Mono for Powerline";
+    color: #000000;
+    @include sp {
+        font-size: 22px;
+        letter-spacing: 0.22rem;
+    }
+}
+nav {
+    width: 30.5%;
+    color: #707070;
+    font-family: "Roboto Mono for Powerline";
+    text-align: left;
+    @include sp {
+        display: none;
+    }
+    ul {
+        display:flex;
+        justify-content:space-between;
+        font-size: 1.8rem;
+        letter-spacing: 0.18rem;
+        li {
+            padding-left: 21px;
+        }
+        
+        
+    }
+}
+
+.ham {
+    display: none;
+    @include sp {
+        position: absolute;
+        right: 20px;
+        width: 16px;
+        height: 14px;
+        padding: 4px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        span {
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: #000000;
+        }
+        .span-short {
+            display: inline-block;
+            height: 1px;
+            width: 50%;background-color: #000000;
+
+        }
+    }
+    
+
+/////////////////////////////////////////////
+  
+  /*
+  .grobal-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    padding: 0 14px;
+  }
+  
+  .grobal-list a {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #111;
+  }
+  .grobal-list a:hover {
+    background-color: #eee;
+  }
+ 
+  .black-bg {//クリックされた時の黒背景
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+  }
+  /* 表示された時用のCSS */
+  /*
+  .nav-open .global-nav {
+    right: 0;
+  }
+  .nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+  }
+  .line-1 {
+    transform: rotate(45deg);
+    top: 20px;
+  }
+  .line-2 {
+    width: 0;
+    left: 50%;
+  }
+  .line-3 {
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.material-box {
+    
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.sample1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+.sample1 li {
+    list-style: none;
+    text-align: center;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+.sample1 li a {
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    line-height: 1em;
+}
+.sample1 li a::after {
+    transition: 0.5s;
+    content: '';
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: black;
+    display: block;
+}
+.sample1 li:hover a {
+    color: black;
+}
+.sample1 li:hover a::after {
+    transform: scaleX(1);
+}
+
+
+
+

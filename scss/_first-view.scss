@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+#first-v {
+    width: 100%;
+    height: 800px;
+    @include sp {
+        width: 100%;
+        height: 597px;
+    }
+}
+
+.first-v-wrap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .first-v-message-wrap {
+        width: 46.3%;
+        position: relative;
+        @include sp {
+            //display: none;
+            position: relative;
+            width: 0;
+        }
+    }
+        .message-child-wrap {
+            z-index: 100;
+            width: 64%;
+            height: 26.8%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 30%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            min-width: 195px;
+            @include sp {
+                z-index: 11;
+                width: 77%;
+                height: 19.8%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(50%, -50%);
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                min-width: 195px;
+            }
+                
+            .kami {
+                font-size: 38px;
+                font-family: "ヒラギノ明朝 Pro", serif;
+                @include sp {
+                    font-size: 23px;
+                    font-family: "ヒラギノ明朝 Pro", serif;
+                    letter-spacing: 0.23rem;
+                    height: 19.5%;
+                    position: absolute;
+                    top: 49.7%;//297/597
+                    left: 23.7%;//89/375
+                }
+            }
+            .hair {
+                font-size: 38px;
+                letter-spacing: 0.38rem;
+                font-family: "Monsieur La Doulaise", cursive;
+                @include sp {
+                    font-size: 28px;
+                    letter-spacing: 0.28rem;
+                    font-family: "Zapfino", cursive;
+                    height: 80.5%;
+                    position: absolute;
+                    top: 33.8%;//202/597
+                    left:50%;
+                }
+            }
+        }
+        
+    .first-v-picture-wrap {
+        width: 53.7%;
+        background-image: url(../img/model.png);
+        background-size: cover;
+        position: relative;
+        @include sp {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: 0% 0%;
+        }
+        
+    }
+}
